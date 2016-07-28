@@ -1,0 +1,21 @@
+---
+title: Welcome to Middleman
+whatever: something else completely
+friends:
+  - Tom
+  - Dick
+  - Harry
+---
+
+<div class="welcome">
+  <h1>Middleman is Watching</h1>
+  <p class="doc">
+    <h1>Is this working</h1>
+    <h1>Friends</h1>
+    <ol>
+        <% current_page.data.friends.each do |f| %>
+            <li><%= f %></li>
+        <% end %>
+    </ol>
+  </p><!-- .doc -->
+</div><!-- .welcome -->

@@ -1,0 +1,23 @@
+{
+  "name": "echophoenix",
+  "version": "0.0.1",
+  "description": "Echo Phoenix is Echo II",
+  "main": "index.js",
+  "scripts": {
+    "sassy": "node-sass --include-path scss source/scss/styles.scss source/public/css/styles.css",
+    "serve": "middleman server -p 2222",
+    "watch": "nodemon -e scss -x \"npm run sassy\"",
+    "sprint": "concurrently --kill-others 'npm run watch' 'npm run serve'"
+  },
+  "keywords": [
+    "catalyze",
+    "echo"
+  ],
+  "author": "Catalyze Design",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.10.0"
+  }
+}
